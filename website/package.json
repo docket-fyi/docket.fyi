@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "build": "docusaurus-build",
-    "publish-gh-pages": "docusaurus-publish",
-    "write-translations": "docusaurus-write-translations",
-    "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "examples": "$(npm bin)/docusaurus-examples",
+    "start": "$(npm bin)/docusaurus-start",
+    "build": "$(npm bin)/docusaurus-build",
+    "publish-gh-pages": "$(npm bin)/docusaurus-publish",
+    "write-translations": "$(npm bin)/docusaurus-write-translations",
+    "version": "$(npm bin)/docusaurus-version",
+    "rename-version": "$(npm bin)/docusaurus-rename-version"
   },
   "devDependencies": {
     "docusaurus": "^1.6.2"
