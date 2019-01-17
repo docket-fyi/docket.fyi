@@ -1,7 +1,6 @@
 language: node_js
 node_js: '10'
 before_script:
-  # - pip install --user awscli
 script:
   - cd ./website
   - npm install
@@ -10,13 +9,13 @@ deploy:
   on:
     branch: develop
   provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: "staging.docket.fyi"
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  bucket: staging.docket.fyi
   region: us-west-2
   acl: public_read
   skip_cleanup: true
   local_dir: build
 notifications:
   slack:
-    secure: fxmJpG/Qx4O/Jml1nhIKrVKj5KslvfODrW74C0g77OXBdhjqaEEnIvMqsz4XE3VyMg0yNwnZ8dTriyTl5NhtYbLwQixylzfdDF6LJoQOozqZjjkIkpEQCIDXgHJwInFC1eKfcGNpEaxOscJAq3waoTX5NKCI+RH/YiUmo6E9ttfUQCHfoVWXYwRqHZUYM/bK9baTGwzjl/lwaBgBHNhbVKFmRmaEI5g9xpgZ+CEqo7uBLKdOOmvi6zM1tu7oRyUv037LcOvqBhle11bn8YDYy/foKDLbV2UPY25PUTw9wXpxDlQvtRk7tyD9Xtm/xNLEbfPm0mozd+jrF4bCEmRH8C5oiUQFFJHbYVnmcUABnZ7KzItt2RXGjiU7WI+KZfd5GhTir619pNA3BqeS0izo39/n7qD8klsF8MWurUch38HBHKkMTwIAI7bmnmDSmihLAY901x+oApzpSlGthu2tK5Qj4E5STdKoXAkshuOVhRKDQYGwoqhk4xqHxH2tW3JsARmThI+5JzVV8/krBLJff2xUq7TvzN2b3+2CsO7uBCUjQ6IhBIL1gQuFjVGUWzcQtyLQwUNdsnMYzX8e9UAPitfSB/6dmuhGH56caIflT2CJ+yZI9rMiuRS5Zq7ps1UjfYNSiq2JRVDWvNC74z8CuQAFb3jQ5KSVZdPYbkX21Xo=
+    secure: SXpymZ+IRYgzYerhTKC3y0Yj7a56AUs7naZZtJEsbsdHBj+IDV+SkzsMGv+KPB06qWzjfhCtCes+M46x4jlRO4jWeUQFK2cF6e84nGDGvtSL2olVMB2XkjpLVyMBQHj40/RwdySt0gSXDaTV6FE3wYysya/YnKyuM1U+ZT5gT2HIY7gC6hggGXNKIQpv5L9tRKLM7NzxKke6Ye9aCB/S3U1n/Xox8RYwCtccWjbmuCra4ojnPci9S1x3AMd83OnNiB+O5QU1Bv5MWbv4P07TAdJAWPJ/EOyXzZBeoIOU8xYV3+9ZI/WmEr7ivJyWFof9aoQZrDJC+V/zRwZH4Vyvd8sNr8U//eHjaf8bp/0zBD+pG9aU3WRJ6//mEOisFyQND/QyjxlPKjERoYZ5KI91ixX3/NV9bQygqxp4tNYH/kZnCO8LT6CLY5jRiwcQo5Y9i1/G2ppEHD56Xlov4c9ANFYQTb7/pKGm97nhsQMmh2df2RVGvEPsLZWqgAFJRsbsu191ZdOZ7o5ypfcv3xw0K4fnGIAVUaH6ZUVaDy8yqXZO24sdGkb59rySlzAsFp7OFL+4IpYUKQ5y2s/AOs6l4b8tsI75g3yL9W7r+kz7ropwIrifDLNDj9LgPtFeycQqICUy4rpTKJQ2ULW550MCuPjzBAqN+rLtYfJo9YpQn2o=
