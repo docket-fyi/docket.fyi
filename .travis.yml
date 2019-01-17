@@ -4,6 +4,7 @@ before_script:
   - pip install --user awscli
 script:
   - cd ./website
+  - npm install
   - npm run build
 deploy:
   on:
