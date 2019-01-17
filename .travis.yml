@@ -13,6 +13,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "staging.docket.fyi"
+  region: us-west-2
   acl: public_read
 notifications:
   slack:
