@@ -1,4 +1,7 @@
-This website was created with [Docusaurus](https://docusaurus.io/).
+# docket.fyi
+Docket public-facing website. This website was created with [Docusaurus](https://docusaurus.io/).
+
+[![Build Status](https://travis-ci.org/docket-fyi/docket.fyi.svg?branch=develop)](https://travis-ci.org/docket-fyi/docket.fyi)
 
 # What's In This Document
 
