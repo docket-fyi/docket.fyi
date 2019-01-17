@@ -1,7 +1,7 @@
 language: node_js
 node_js: '10'
 before_script:
-  - pip install awscli
+  - pip install --user awscli
 script:
   - cd ./website
   - npm run build
