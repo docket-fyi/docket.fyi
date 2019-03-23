@@ -3,6 +3,7 @@ Docket public-facing website. This website was created with [Docusaurus](https:/
 
 [![Build Status](https://travis-ci.org/docket-fyi/docket.fyi.svg?branch=develop)](https://travis-ci.org/docket-fyi/docket.fyi)
 [![David DM](https://david-dm.org/docket-fyi/docket.fyi.svg)](https://david-dm.org)
+[![Greenkeeper badge](https://badges.greenkeeper.io/docket-fyi/docket.fyi.svg)](https://greenkeeper.io/)
 
 # What's In This Document
 
